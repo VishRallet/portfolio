@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishal Chawla - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#social">Connect</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Vishal Chawla</span></h1>
+      <p>A final year BCA student at Kristu Jayanti College, Autonomous, Bangalore.</p>
+      <a href="#projects" class="btn hero-btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="me.jpg" alt="Your Photo">
+      <div class="about-text">
+        <p>I am currently pursuing my Bachelor of Computer Applications (BCA) degree from Kristu Jayanti College, Bangalore, with a strong passion for coding and software development. I have a diverse set of skills ranging from Java and Python to VB.NET and MySQL, which I've applied in various projects, including an Online Shopping Application and a Task Management App for recommending tasks based on priority.
+
+          I've also had the privilege of interning at Tata Steel Limited, where I worked on asset monitoring using IoT devices and PLC systems. I am an active participant in hackathons and coding competitions, often taking up leadership roles, such as being the event head for intra-college coding challenges. In addition to my technical knowledge, I have earned certifications in Blockchain, Cloud Security Fundamentals, DBMS and Python , which have broadened my expertise in emerging technologies.
+          
+          I'm passionate about problem-solving and developing practical solutions that can make a difference, and I am excited about exploring new opportunities in software development and technology.</p>
+        <a href="resume.pdf" class="btn">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill"><i class="fab fa-html5"></i><h3>HTML5</h3></div>
+      <div class="skill"><i class="fab fa-css3-alt"></i><h3>CSS3</h3></div>
+      <div class="skill"><i class="fab fa-js-square"></i><h3>JavaScript</h3></div>
+      <div class="skill"><i class="fab fa-java"></i><h3>Java</h3></div>
+      <div class="skill"><i class="fab fa-python"></i><h3>Python</h3></div>
+      <div class="skill"><i class="fas fa-database"></i><h3>MySQL</h3></div>
+      <div class="skill"><i class="fas fa-chart-bar"></i><h3>Data Visualization</h3></div>
+      <div class="skill"><i class="fas fa-server"></i><h3>NoSQL</h3></div>
+      <div class="skill"><i class="fas fa-cogs"></i><h3>Machine Learning</h3></div>
+      <div class="skill"><i class="fas fa-network-wired"></i><h3>IoT</h3></div>
+      <div class="skill"><i class="fas fa-code"></i><h3>Visual Basic</h3></div>
+      <div class="skill"><i class="fas fa-code"></i><h3>C</h3></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="project1.jpg" alt="Online Shopping Application">
+            <h3>Online Shopping Application</h3>
+          </div>
+          <div class="card-back">
+            <p>An Online Shopping Application using VB.NET and SQL in Visual Studio 2022 and MySQL Workbench 8.0 CE.</p>
+            <p>Technologies Used - Visual Basic, .NET Framework, PL/SQL, NuGet Packages, SMS OTP API.</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="project2.jpg" alt="Tic Tac Toe">
+            <h3>Tic Tac Toe</h3>
+          </div>
+          <div class="card-back">
+            <p>An interactive Tic Tac Toe game with GUI built using Tkinter library in Python.</p>
+            <p>Technologies Used - Python, Tkinter Library, NumPy Library.</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="project3.jpg" alt="Task Management App">
+            <h3>Task Management App</h3>
+          </div>
+          <div class="card-back">
+            <p>A Python task management app for adding, removing, listing, prioritizing, and recommending tasks using the Multinomial Naive Bayes Classifier.</p>
+            <p>Technologies Used - Python, Pandas, Scikit-Learn, Multinomial NB-ML Algorithm.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">↑</button>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka, India</p>
+        <p><i class="fas fa-phone"></i> +91 94709 20164</p>
+        <p><i class="fas fa-envelope"></i> vishalchawlajsr@gmail.com</p>
+      </div>
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="input-group">
+            <input type="text" name="name" id="name" required placeholder="Your Name">
+          </div>
+          <div class="input-group">
+            <input type="email" name="email" id="email" required placeholder="Your Email">
+          </div>
+          <div class="input-group">
+            <textarea name="message" id="message" rows="5" required placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Section -->
+  <section id="social">
+    <h2>Connect with Me</h2>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/vishrallet" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/VishRallet" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/_vishrallet_" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/9470920164" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:vishalchawlajsr@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Vishal Chawla. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
